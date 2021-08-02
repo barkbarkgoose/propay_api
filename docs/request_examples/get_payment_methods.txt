@@ -1,0 +1,38 @@
+GET request for payer payment methods
+see page 89 in ProtectPay-API-Manual
+
+example url: 'https://api.propay.com/ProtectPay/Payers/2477037462136219/PaymentMethods/'
+
+
+Response example: (fake or test results)
+{
+    'PaymentMethods': [
+        {
+            'PaymentMethodID': '7263a-1c98159-d428-b59-d4228-b8d01',
+            'PaymentMethodType': 'VISA',
+            'ObfuscatedAccountNumber': '474747*****4747',
+            'ExpirationDate': '0423',
+            'AccountName': fname lname',
+            'BillingInformation': {
+                'Address1': '190 W 800 N',
+                'Address2': 'Suite 202',
+                'Address3': '',
+                'City': 'Provo',
+                'State': 'UT',
+                'ZipCode': '84601',
+                'Country': 'USA',
+                'TelephoneNumber': '',
+                'Email': ''
+            },
+            'Description': '',
+            'Priority': 1,
+            'DateCreated': '2020-12-18T10:21:27.907',
+            'Protected': False
+        }
+    ],
+    'RequestResult': {
+        'ResultValue': 'SUCCESS',
+        'ResultCode': '00',
+        'ResultMessage': ''
+    }
+}

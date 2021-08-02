@@ -1,0 +1,19 @@
+Query for Propay payer details
+
+example url: 'https://api.propay.com/ProtectPay/Payers/?externalId1=00000'
+
+{
+    'RequestResult': {
+        'ResultValue': 'SUCCESS', '
+        ResultCode': '00',
+        'ResultMessage': ''
+    },
+    'Payers': [
+        {
+            'payerAccountId': '2477037462136219',
+            'Name': 'fname lname',
+            'ExternalId1': '00000',
+            'ExternalId2': '2477037462136219'
+        },
+    ]
+}
